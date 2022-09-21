@@ -1,0 +1,71 @@
+*,after,brfore{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+	background-color: #fff;
+	color: #484848;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+}
+::-moz-selection { 
+    background: #3bbf745b; 
+  }
+  ::selection { 
+    background: #3bbf745b; 
+  }
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+ul li,
+ol li {
+    list-style-type: none;
+}
+
+.section-title{
+	position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+	display: inline-block;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section-title:before{
+	content: '';
+	background: transparent linear-gradient(to right, transparent, rgba(59, 191, 116, 0.19), transparent) repeat scroll 0 0;
+    position: absolute;
+    height: 120%;
+    width: 200%;
+    top: -15%;
+    left: -50%;
+}
+.section-title:after{
+	content: '';
+    position: absolute;
+    background: linear-gradient(to right, #fff, #3bbf7e, #3bbf7e, #fff);
+    height: 2px;
+    width: 100px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// Scrollbar design start
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+// Scrollbar design end
